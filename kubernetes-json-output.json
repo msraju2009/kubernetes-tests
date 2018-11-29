@@ -1,0 +1,80 @@
+{
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2018-11-23T09:03:18Z",
+                "reason": "PodCompleted",
+                "status": "True",
+                "type": "Initialized"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2018-11-23T09:45:59Z",
+                "reason": "PodCompleted",
+                "status": "False",
+                "type": "Ready"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": null,
+                "reason": "PodCompleted",
+                "status": "False",
+                "type": "ContainersReady"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2018-11-23T09:02:54Z",
+                "status": "True",
+                "type": "PodScheduled"
+            }
+        ],
+        "containerStatuses": [
+            {
+                "containerID": "df3c7b9116946d104b79baeeaa39d56b4119a0732b5034366c31",
+                "image": "localhost:5000/content:1.6.0.120",
+                "imageID": "docker-pullable://localhost:5000",
+                "lastState": {},
+                "name": "test-job1-oo-9j9kj",
+                "ready": false,
+                "restartCount": 0,
+                "state": {
+                    "terminated": {
+                        "containerID": "docker://d5ef5c62defeff4366c31",
+                        "exitCode": 0,
+                        "finishedAt": "2018-11-23T09:45:58Z",
+                        "reason": "Completed",
+                        "startedAt": "2018-11-23T09:03:20Z"
+                    }
+                }
+            }
+        ],
+        "hostIP": "10.12.50.238",
+        "initContainerStatuses": [
+            {
+                "containerID": "docker://3a1918995a",
+                "image": "localhost:5000/hit:1.6.0.8",
+                "imageID": "docke/it58734e1e8296caea5317ae318489463186b3ca73a6a6c42f12",
+                "lastState": {},
+                "name": "install",
+                "ready": true,
+                "restartCount": 0,
+                "state": {
+                    "terminated": {
+                        "containerID": "docker://3a1918dbafdc642ac995a",
+                        "exitCode": 0,
+                        "finishedAt": "2018-11-23T09:03:17Z",
+                        "reason": "Completed",
+                        "startedAt": "2018-11-23T09:02:56Z"
+                    }
+                }
+            }
+        ],
+        "phase": "Succeeded",
+        "podIP": "172.16.9.22",
+        "qosClass": "BestEffort",
+        "startTime": "2018-11-23T09:02:54Z"
+    }
+}
